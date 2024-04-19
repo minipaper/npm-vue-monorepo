@@ -1,0 +1,15 @@
+{
+  "name": "npm-vue-monorepo",
+  "private": true,
+  "workspaces":[
+    "front-common",
+    "front-admin",
+    "front-user"
+  ],
+  "scripts": {
+    "dev:admin" : "npm run dev --workspace front-admin",
+    "dev:user" : "npm run dev --workspace front-user",
+    "format": "prettier --write 'front-*/**/*.{js,vue,json,css,md}'",
+    "lint": "eslint 'front-*/**/*.{js,vue}'"
+  }
+}
