@@ -7,8 +7,12 @@
     "front-user"
   ],
   "scripts": {
+    "dev:common" : "npm run dev --workspace front-common",
     "dev:admin" : "npm run dev --workspace front-admin",
     "dev:user" : "npm run dev --workspace front-user",
+    "build:common" : "npm run build --workspace front-common",
+    "build:admin" : "npm run build --workspace front-admin",
+    "build:user" : "npm run build --workspace front-user",
     "format": "prettier --write 'front-*/**/*.{js,vue,json,css,md}'",
     "lint": "eslint 'front-*/**/*.{js,vue}'"
   }
